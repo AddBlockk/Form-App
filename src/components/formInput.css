@@ -31,13 +31,13 @@ input:invalid[focused="true"] ~ span {
   display: block;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .formInput {
     width: 100%;
     height: auto;
   }
   input {
-    padding: 5px;
+    padding: 15px;
     margin: 10px 0px;
   }
 }
