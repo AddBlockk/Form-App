@@ -17,6 +17,11 @@ form {
   background-color: white;
   padding: 0px 60px;
   border-radius: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -25,7 +30,10 @@ h1 {
 }
 
 button {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   height: 70px;
   padding: 10px;
   border: none;
@@ -37,4 +45,28 @@ button {
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  form {
+    width: 50%;
+    height: auto;
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(137, 1, 255);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  #root {
+    font-size: 15px;
+  }
 }
